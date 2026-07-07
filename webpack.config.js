@@ -16,4 +16,13 @@ module.exports = {
       },
     ],
   },
+
+  output: {
+    publicPath: '/dist/',
+  },
+
+  devServer: {
+    hot: true,
+    open: true,
+  },
 };

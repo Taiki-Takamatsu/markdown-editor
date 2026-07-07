@@ -2,7 +2,7 @@
   "name": "markdown-editor",
   "version": "1.0.0",
   "scripts": {
-    "start": "echo 'Hello! package.json'",
+    "start": "webpack serve --mode=development",
     "build": "webpack --mode=production"
   },
   "devDependencies": {
@@ -11,7 +11,8 @@
     "ts-loader": "^9.6.2",
     "typescript": "^6.0.3",
     "webpack": "^5.108.4",
-    "webpack-cli": "^7.2.1"
+    "webpack-cli": "^7.2.1",
+    "webpack-dev-server": "^6.0.0"
   },
   "dependencies": {
     "react": "^19.2.7",

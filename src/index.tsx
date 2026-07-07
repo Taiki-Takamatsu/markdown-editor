@@ -8,4 +8,3 @@ const root = createRoot(
 );
 
 root.render(Main);
-
