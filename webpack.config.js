@@ -1,6 +1,7 @@
+const path = require('path');
+
 module.exports = {
   mode: "development",
-
   entry: "./src/index.tsx",
 
   resolve: {
@@ -18,11 +19,17 @@ module.exports = {
   },
 
   output: {
-    publicPath: '/dist/',
+    filename: 'index.js',
+    path: path.resolve(__dirname, 'dist'),  // 追加
+    publicPath: '/',
   },
 
   devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
     hot: true,
     open: true,
+    port: 8080,  // 追加
   },
 };
